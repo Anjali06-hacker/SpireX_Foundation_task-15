@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANSRAJ College</title>
+    <!-- Connecting CSS file -->
+    <link rel="stylesheet" href="task-15.css">
+</head>
+<body>
+    <!-- ================= HEADER ================= -->
+    <header>
+        <!-- College logo/name -->
+        <div class="logo">
+            HANSRAJ College
+        </div>
+        <!-- Navigation menu -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#departments">Departments</a>
+            <a href="#courses">Courses</a>
+            <a href="#faculty">Faculty</a>
+            <a href="#events">Events</a>
+        </nav>
+    </header>
+    <!-- ================= HOME ================= -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>
+                Welcome to HANSRAJ College
+            </h1>
+            <p>
+                Education, Knowledge and Excellence
+            </p>
+            <a href="#about" class="hero-button">
+                Explore College
+            </a>
+        </div>
+    </section>
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+        <h2>About Our College</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    HANSRAJ College is an educational institution
+                    dedicated to providing quality education,
+                    practical knowledge and opportunities for
+                    students to develop their skills.
+                </p>
+                <p>
+                    The college provides undergraduate and
+                    postgraduate courses along with various
+                    academic and extracurricular activities.
+                </p>
+            </div>
+            <!-- College statistics -->
+            <div class="statistics">
+                <div class="stat">
+                    <h3>2500+</h3>
+                    <p>Students</p>
+                </div>
+                <div class="stat">
+                    <h3>100+</h3>
+                    <p>Faculty Members</p>
+                </div>
+                <div class="stat">
+                    <h3>10+</h3>
+                    <p>Departments</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= DEPARTMENTS ================= -->
+    <section id="departments" class="light-section">
+        <h2>Departments</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Computer Science</h3>
+                <p>
+                    Programming, software development,
+                    databases and computer technologies.
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔬</div>
+                <h3>Science</h3>
+                <p>
+                    Physics, Chemistry, Mathematics and
+                    other scientific subjects.
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📚</div>
+                <h3>Arts</h3>
+                <p>
+                    Literature, history, sociology and
+                    humanities-related subjects.
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💼</div>
+                <h3>Commerce</h3>
+                <p>
+                    Accounting, finance, business and
+                    management studies.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ================= COURSES ================= -->
+    <section id="courses">
+        <h2>Courses Offered</h2>
+        <div class="course-container">
+            <div class="course">
+                <h3>BCA</h3>
+                <p>
+                    Bachelor of Computer Applications
+                </p>
+                <span>3 Years</span>
+            </div>
+            <div class="course">
+                <h3>B.Sc</h3>
+                <p>
+                    Bachelor of Science
+                </p>
+                <span>3 Years</span>
+            </div>
+            <div class="course">
+                <h3>B.Com</h3>
+                <p>
+                    Bachelor of Commerce
+                </p>
+                <span>3 Years</span>
+            </div>
+            <div class="course">
+                <h3>MCA</h3>
+                <p>
+                    Master of Computer Applications
+                </p>
+                <span>2 Years</span>
+            </div>
+        </div>
+    </section>
+    <!-- ================= FACULTY ================= -->
+    <section id="faculty" class="light-section">
+        <h2>Our Faculty</h2>
+        <div class="faculty-container">
+            <div class="faculty-card">
+                <div class="faculty-icon">
+                    👨‍🏫
+                </div>
+                <h3>Dr. Raj Sharma</h3>
+                <p>
+                    Professor - Computer Science
+                </p>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-icon">
+                    👩‍🏫
+                </div>
+                <h3>Dr. Priya Singh</h3>
+                <p>
+                    Professor - Mathematics
+                </p>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-icon">
+                    👨‍🏫
+                </div>
+                <h3>Dr. Amit Kumar</h3>
+                <p>
+                    Professor - Commerce
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ================= STUDENTS ================= -->
+    <section id="students">
+        <h2>Student Information</h2>
+        <div class="student-container">
+            <div class="student-box">
+                <h3>Student Portal</h3>
+                <p>
+                    Students can access academic information,
+                    notices and college activities.
+                </p>
+                <button onclick="showStudentMessage()">
+                    View Information
+                </button>
+            </div>
+            <div class="student-box">
+                <h3>Academic Activities</h3>
+                <p>
+                    Participate in workshops, seminars,
+                    competitions and other activities.
+                </p>
+                <button onclick="showActivityMessage()">
+                    Learn More
+                </button>
+            </div>
+        </div>
+        <!-- JavaScript message appears here -->
+        <p id="studentMessage"></p>
+    </section>
+    <!-- ================= EVENTS ================= -->
+    <section id="events" class="light-section">
+        <h2>Upcoming Events</h2>
+        <div class="event-container">
+            <div class="event">
+                <div class="event-date">
+                    15
+                    <span>OCT</span>
+                </div>
+                <div>
+                    <h3>Annual College Fest</h3>
+                    <p>
+                        Cultural and entertainment activities
+                        for students.
+                    </p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-date">
+                    05
+                    <span>NOV</span>
+                </div>
+                <div>
+                    <h3>Technology Seminar</h3>
+                    <p>
+                        Seminar on modern technology and
+                        career opportunities.
+                    </p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-date">
+                    20
+                    <span>NOV</span>
+                </div>
+                <div>
+                    <h3>Sports Day</h3>
+                    <p>
+                        Annual sports competition for students.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <h3>HANSRAJ COLLEGE</h3>
+        <p>
+            Knowledge • Skills • Success
+        </p>
+        <p>
+            © 2026 HANSRAJ COLLEGE. All Rights Reserved.
+        </p>
+    </footer>
+    <!-- Connecting JavaScript -->
+    <script src="task-15.js"></script>
+</body>
+</html>
